@@ -1,0 +1,241 @@
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid #646cff;
+  margin-bottom: 2rem;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.App-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+  text-align: center;
+  color: #888;
+}
+
+/* Wallet Connection */
+.wallet-connected {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wallet-connect {
+  text-align: right;
+}
+
+.connectors {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #646cff;
+  background: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background: #535bf2;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Create Proposal */
+.create-proposal {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.create-proposal form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.create-proposal textarea {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #242424;
+  color: white;
+  font-family: inherit;
+  resize: vertical;
+}
+
+/* Proposal List */
+.proposal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Individual Proposal */
+.proposal {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.proposal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.proposal-header h3 {
+  margin: 0;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status.active {
+  background: #10b981;
+  color: white;
+}
+
+.status.succeeded {
+  background: #3b82f6;
+  color: white;
+}
+
+.status.defeated {
+  background: #ef4444;
+  color: white;
+}
+
+.status.executed {
+  background: #6366f1;
+  color: white;
+}
+
+.proposal-description {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #242424;
+  border-radius: 6px;
+}
+
+.proposal-stats {
+  margin: 1rem 0;
+}
+
+.vote-bar {
+  display: flex;
+  height: 2rem;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #242424;
+  margin-bottom: 0.5rem;
+}
+
+.for-bar {
+  background: #10b981;
+  transition: width 0.3s;
+}
+
+.against-bar {
+  background: #ef4444;
+  transition: width 0.3s;
+}
+
+.vote-counts {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.for-votes {
+  color: #10b981;
+}
+
+.against-votes {
+  color: #ef4444;
+}
+
+.timing {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.proposal-actions {
+  margin-top: 1rem;
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.vote-for {
+  background: #10b981;
+  border-color: #10b981;
+}
+
+.vote-for:hover:not(:disabled) {
+  background: #059669;
+}
+
+.vote-against {
+  background: #ef4444;
+  border-color: #ef4444;
+}
+
+.vote-against:hover:not(:disabled) {
+  background: #dc2626;
+}
+
+.execute-button {
+  background: #6366f1;
+  border-color: #6366f1;
+}
+
+.execute-button:hover:not(:disabled) {
+  background: #4f46e5;
+}
+
+.voted-message,
+.success-message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background: #10b98120;
+  color: #10b981;
+}

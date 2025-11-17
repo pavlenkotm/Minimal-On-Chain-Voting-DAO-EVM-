@@ -1,0 +1,18 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+
+# Hardhat files
+cache
+artifacts
+
+# Frontend
+frontend/node_modules
+frontend/.next
+frontend/build
+frontend/dist
+frontend/.env.local
+frontend/.env.production.local
